@@ -24,7 +24,7 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     getTodos().then(setTodos);
-  });
+  }, []);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -34,6 +34,8 @@ export const App: React.FC = () => {
     const newTodo = { id: maxId, userId: 2042, title: query, completed: false };
 
     addTodo(newTodo);
+
+    setTodos(existing => [...existing, newTodo]);
 
     setLoading(false);
 
