@@ -46,7 +46,7 @@ export const App: React.FC = () => {
     setLoading(true);
     deleteTodo(id);
 
-    // setTodos(existing => existing.filter(todo => todo.id !== id));
+    setTodos(existing => existing.filter(todo => todo.id !== id));
 
     setLoading(false);
   };
