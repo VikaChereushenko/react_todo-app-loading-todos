@@ -58,7 +58,7 @@ export const App: React.FC = () => {
         )}
       </div>
 
-      <Error errorMessage={errorMessage} hideError={setErrorMessage}/>
+      <Error errorMessage={errorMessage} hideError={setErrorMessage} />
     </div>
   );
 };

@@ -20,7 +20,7 @@ export const TodoList: React.FC<Props> = ({ filteredTodos }) => {
             })}
             key={todo.id}
           >
-            <label className="todo__status-label">
+            <label className="todo__status-label" >
               <input
                 data-cy="TodoStatus"
                 type="checkbox"
